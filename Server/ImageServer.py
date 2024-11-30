@@ -16,8 +16,8 @@ sio = socketio.Server()
 app = socketio.WSGIApp(sio)
 
 # Default server IP and server Port
-ip = "0.0.0.0" 
-port = 5000
+ip = "127.0.0.1"
+port = 8080
 
 # Display the image on a OpenCV window
 isDisplay = False
@@ -28,9 +28,10 @@ isAuth = False
 # Dummy in-memory key-value pairs user database for dummy authentication using 
 dummyUserDB = { 
 	# Add more users as needed
-	"user1": "pass1"
+	"user1": "pass1",
 	"Alice": "123",
-	"Bob": "456"
+	"Bob": "456",
+	"Khai":"112233"
 }
 
 # Map of authenticated session id's and respective usernames

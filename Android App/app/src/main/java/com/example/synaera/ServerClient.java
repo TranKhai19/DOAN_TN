@@ -18,7 +18,7 @@ public class ServerClient {
 
     private static String EVENT_TRANSCRIPT = "onTranscriptGenerated";
     private Socket mSocket = null;
-    private String mServerIp = "localhost";
+    private String mServerIp = "127.0.0.1";
     private int mServerPort = 8080;
 
     private String mUsername = null;
